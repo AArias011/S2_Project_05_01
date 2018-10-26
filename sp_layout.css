@@ -14,10 +14,12 @@
 */
 
 /* Window and Body Styles */
+/* This sets the height of the html to 100% */
 html {
     height: 100%;
 }
 
+/* This sets the body to have a width of 95%, max and min width of 640 and 960 pixels. The margin left and right auto sets the page to align in the center. */
 body {
     width: 95%;
     max-width: 640px;
@@ -27,6 +29,7 @@ body {
     min-height: 100%;
 }
 
+/* This set of code sets the hyperlink thats in the list thats in a nav thats in an unordered list thats in a header to have a box sizing to border box. */
 header,
 ul,
 nav,
@@ -38,6 +41,7 @@ a {
 
 
 /* Row Styles */
+/* This set of code solves any container collapse. */
 .row::after {
     clear: both;
     content: "";
@@ -48,12 +52,14 @@ a {
 
 
 /* Page Header Styles */
+/* This set of code has it so that the img is the child of the header and the header is the child of the body. And that sets the display to block, width to 70% and it also floats it to the left. */
 body>header>img {
     display: block;
     width: 70%;
     float: left;
 }
 
+/* This set of code sets the the nav thats in the header and the header thats in the body to float left, have a righ and left padding of 2% and lastly a width of 30%. */
 body header nav {
     float: left;
     padding-left: 2%;
@@ -61,12 +67,14 @@ body header nav {
     width: 30%;
 }
 
+/* This set of code sets the hyperlink thats in a nav thats in a header have a display of block and a width of 100%. */
 header nav a {
     display: block;
     width: 100%;
 }
 
 /* Horizontal Navigation List Styles */
+/* This set of code targets the lists of the specific class of horizontal to have a display of block, a width of 12.5% and also makes it float to the left.  */
 .horizontal li {
     display: block;
     width: 12.5%;
@@ -74,6 +82,7 @@ header nav a {
 }
 
 /* Topics Styles */
+/* This set of code targets the ul with the id of targets to have a display of block, width of 20%, margin-right to 1.5%, margin-left to 0% and also floats it to the left. */
 ul#topics li {
     display: block;
     width: 20%;
@@ -82,14 +91,17 @@ ul#topics li {
     margin-right: 1.5%;
 }
 
+/*This set of code targets the first unordered lists and sets the margin-left to 7.75%.  */
 ul#topics:first-of-type {
     margin-left: 7.75%;
 }
 
+/* This set of code targets the last unordered lists and sets the margin-left to 7.75%. */
 ul#topics:last-of-type {
     margin-right: 7.75%;
 }
 
+/*This set of code targets the id of topics with an image to have a display of block, a width of 50% and a right and left margin of auto. */
 ul#topics img {
     display: block;
     width: 50%;
@@ -99,6 +111,7 @@ ul#topics img {
 
 
 /* HR Styles */
+/* This sets a horizontal line to have a width of 50%. */
 hr {
     width: 50%;
 }
@@ -106,11 +119,13 @@ hr {
 
 
 /* Customer Comment Styles */
+/* This targets the id of comments to have a width of 75% and the left and right margin to auto and the bottom and top margin to 40 pixels */
 ul#comments {
     width: 75%;
     margin: 40px auto;
 }
 
+/* This targets the lists that have an id of comments to have a display of block, width of 50%, bottom of margin to 30 pixels and floats it to the left. */
 ul#comments li {
     display: block;
     width: 50%;
@@ -118,6 +133,7 @@ ul#comments li {
     margin-bottom: 30px;
 }
 
+/* This targets the image that has an id of comments to have a display of block, width of 20%, left and right margin to 5% and floats it to the left. */
 #comments img {
     display: block;
     width: 20%;
@@ -126,6 +142,13 @@ ul#comments li {
     margin-right: 5%;
 }
 
+/* This targets the paragraph that has an id of customer to float left and to have a width of 70%. */
+li#customer p {
+    float: left;
+    width: 70%;
+}
+
+
 #comments::after {
     clear: both;
     content: "";
@@ -133,3 +156,7 @@ ul#comments li {
 }
 
 /* Footer Styles */
+/* This displays the footer only when both margins are cleared of floating objects. */
+footer {
+    clear: both;
+}
